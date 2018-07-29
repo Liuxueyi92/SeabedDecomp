@@ -133,6 +133,7 @@ int main(int argc,char *argv[])
 	float *cpz_imag=sf_floatalloc(nt);
 	zero_float_1d(cpz_real,nt);
 	zero_float_1d(cpz_imag,nt);
+/*
 	for(int i=0;i<nt;i++){
 		cpz_real[i]=amp_cpz[i]*cos(pha_cpz[i]);
 		cpz_imag[i]=amp_cpz[i]*sin(pha_cpz[i]);
@@ -147,7 +148,7 @@ int main(int argc,char *argv[])
 			fprintf(fp,"%f\n",cpz_imag[i]*10000);
 		fclose(fp);
 	}
-
+*/
 
 	//free variables' storage space
 	free_complex_2d(vxdatafk);		free_complex_2d(vzdatafk);
